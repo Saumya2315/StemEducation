@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+    <style>
+        body{
+            margin:5%;
+        }
+        .photo-container {
+            width: 100%;
+         
+        }
+        
+        .image {
+            display: inline-block;
+            width: 350px;
+            height: 350px;
+            margin-left: 45px;
+            background-position: center;
+            background-size: cover;
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .image:hover {
+            transform: scale(1.9);
+        }
+        .left{
+           float:left;
+           width:40%
+
+        }
+        .right{
+            border:2px solid grey;
+            border-radius:20px;
+            padding:10px;
+            float:right;
+            width:55%;
+            margin-bottom:20px;
+        }
+        li{
+            /* list-style-type: none; */
+            color: rgb(97, 95, 95)
+        }
+        .image{
+            display: none;
+        }
+        .btn{
+              display:flex;
+              justify-content: center;
+              margin-top:80px;
+              align-items: center;
+        }
+    </style>
+    </head>
+    <title>Legs Robot Kit</title>
+        <body>
+        <h1 style="color: black;text-align:center ";>DIY 18DOF Aluminum Hexapod Spider Six 3DOF Legs Robot Kit with 32CH Controller</h1>
+        
+        
+    <div class="left">
+        <div class="photo-container">
+            <img class="image" src="images/1.webp">
+            <img class="image" src='images/2.webp'>
+            <img class="image" src='images/3.jpg'>
+            <img class="image" src='images/4.jpg'>
+            <img class="image" src='images/5.webp'>
+            <img class="image" src='images/6.webp'>
+            <img class="image" src='images/7.webp'>
+            <div class="btn">
+            <button onclick="plusDivs(-1)">&#10094;</button>
+            <button onclick="plusDivs(+1)">&#10095;</button>
+        </div>
+        </div>
+    </div>
+    <div class="right">
+        <p>
+            This is 18DOF Aluminium Hexapod Spider Six 3DOF Legs Robot Frame with Servos. The Arduino Hexapod Robot has a more natural-looking, more articulate leg and body design.
+            The three DOF (degree of freedom) leg design means this robot can walk in any direction. The robot has been designed to use 18 TowerPro MG955 servos with maximum torque of 13kg for the legs.
+            In addition, you will need Electronics and Batteries. This is quite possibly the nicest looking, best performing, commercially available hexapod out there.
+            The body of this hexapod is made up of aluminium alloy which is blasting process.
+        </p>
+        <hr>
+        <h2>Packages Includes</h2>
+        <div>
+        <ul>
+            <li>18 x MG955 Servos (Max torque 17kg)</li>
+            <li>18 x Aluminum Round type Servo Horn</li>
+            <li>1 x USB 32Ch Servo Motor Controller Board</li>
+            <li>12 x Multifunctional bracket</li>
+            <li>1 x Main body frame upper shell</li>
+            <li>1 x Main body frame lower shell</li>
+            <li>6 x Upper Leg</li>
+            <li>6 x Calf</li>
+            <li>1 x Set of Screws, nuts, bolts</li>
+        </ul>
+    </div>
+    </div>
+    </body>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("image");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+</html>

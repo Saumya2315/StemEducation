@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+    <style>
+        body{
+            margin:5%;
+        }
+        .photo-container {
+            width: 100%;
+         
+        }
+        
+        .image {
+            display: inline-block;
+            width: 350px;
+            height: 350px;
+            margin-left: 45px;
+            background-position: center;
+            background-size: cover;
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .image:hover {
+            transform: scale(1.9);
+        }
+        .left{
+           float:left;
+           width:40%
+
+        }
+        .right{
+            border:2px solid grey;
+            border-radius:20px;
+            padding:10px;
+            float:right;
+            width:55%;
+            margin-bottom:20px;
+        }
+        li{
+            /* list-style-type: none; */
+            color: rgb(97, 95, 95)
+        }
+        .image{
+            display: none;
+        }
+        .btn{
+              display:flex;
+              justify-content: center;
+              margin-top:80px;
+              align-items: center;
+        }
+    </style>
+    </head>
+    <title>Arm Kit</title>
+        <body>
+        <h1 style="color: black;text-align:center ";>DIY Acrylic Robot Manipulator Mechanical Arm Kit (not-including Servo and Board)</h1>
+        
+        
+    <div class="left">
+        <div class="photo-container">
+            <img class="image" src="images/1.webp">
+            <img class="image" src='images/2.webp'>
+            <img class="image" src='images/3.webp'>
+            <img class="image" src='images/4.webp'>
+            <button onclick="plusDivs(-1)">&#10094;</button>
+            <button onclick="plusDivs(+1)">&#10095;</button>
+        </div>
+        </div>
+    </div>
+    <div class="right">
+        <p>
+            It is a DIY Acrylic Robot Manipulator Mechanical Arm (not-including Servo and Board). The arm has 4 DOF. The mechanical parts are laser cut to precision and are versatile to use.
+        </p>
+        <p><i><h4  style="color: orange;";>Note: 
+            The robotic manipulator mechanical arm is not assembled with all the necessary parts present in the kit. Also, the kit does not include servo motors, controller boards, and other accessories.</h4></i></p>
+        <hr>
+        <b><h2>Features</h2></b>
+        <ul>
+            <li>Material: Acrylic</li>
+            <li>Affordable 4-DOF manipulators.</li>
+            <li>Highly versatile mechanical parts.</li>
+            <li>Wood board laser cutting with precision.</li>
+            <li>Easy to assemble.</li>
+        </ul>
+        <hr>
+        <h2>Packages Includes</h2>
+        <div>
+        <ul>
+            <li>1 x  DIY Acrylic Robot Manipulator Mechanical Arm Kit.</li>
+            <li>1 x Screw Set.</li>
+        </ul>
+    </div>
+    </div>
+    </body>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("image");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+</html>+-
